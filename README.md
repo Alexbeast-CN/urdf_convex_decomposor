@@ -41,7 +41,7 @@ URDF 碰撞几何体修改器是一个 Python 脚本，旨在处理和优化 URD
 要使用 URDF 碰撞几何体修改器，请使用以下命令运行脚本：
 
 ```
-python urdf_collision_modifier.py -u <URDF文件路径> -m <网格文件目录路径> [选项]
+python urdf_convex_decomposor.py -u <URDF文件路径> -m <网格文件目录路径> [选项]
 ```
 
 ### 参数：
@@ -60,7 +60,7 @@ OpenLoong 机器人分解前，总网格数 = 32：
 运行脚本以分解碰撞几何体：
 
 ```
-python3 urdf_collision_modifier.py -u openloong_description/urdf/AzureLoong.urdf -m <网格目录的绝对路径> -t 0.07 -pr 60
+python3 urdf_convex_decomposor.py -u openloong_description/urdf/AzureLoong.urdf -m <网格目录的绝对路径> -t 0.07 -pr 60
 ```
 
 OpenLoong 机器人在 t = 0.35，pr = 30 分解后，总网格数 = 115：

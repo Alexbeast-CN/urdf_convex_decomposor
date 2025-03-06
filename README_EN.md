@@ -42,7 +42,7 @@ Before you begin, ensure you have met the following requirements:
 To use the URDF Collision Modifier, run the script with the following command:
 
 ```
-python urdf_collision_modifier.py -u <path_to_urdf> -m <path_to_mesh_directory> [options]
+python urdf_convex_decomposor.py -u <path_to_urdf> -m <path_to_mesh_directory> [options]
 ```
 
 ### Arguments:
@@ -61,7 +61,7 @@ OpenLoong Robot before decomposition, total number of meshes = 32:
 run the script to decompose the collision geometries:
 
 ```
-python3 urdf_collision_modifier.py -u openloong_description/urdf/AzureLoong.urdf -m <the absolute path to the mesh directory> -t 0.07 -pr 60
+python3 urdf_convex_decomposor.py -u openloong_description/urdf/AzureLoong.urdf -m <the absolute path to the mesh directory> -t 0.07 -pr 60
 ```
 
 OpenLoong Robot after decomposed with t = 0.35, pr = 30, total number of meshes = 115:
